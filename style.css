@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Plus&family=Joan&family=Montserrat:wght@400;600&family=PT+Serif&family=Source+Serif+Pro:wght@200&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    background: #06adff;
+}
+html{
+    font-size: 62.5%;
+}
+.skills-wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 600px;
+    background: #fff;
+    border-radius: 1rem;
+    width: 100%;
+    padding: 5rem 4rem;
+}
+.skills-wrapper .skill-box h4{
+    background: #fff;
+    font-size: 1.5rem;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+.skills-wrapper .skill-box{
+    margin-bottom: 2rem;
+    background: #fff;
+}
+.skills-wrapper .skill-box .progress-wrap{
+    height: 6px;
+    width: 100%;
+    border: 1.6px solid #000;
+    border-radius: 10px;
+    background: #fff;
+}
+.skills-wrapper .skill-box .progress-wrap .progress-bar{
+    display: block;
+    height: 100%;
+    background: #000;
+    width: 0;
+    position: relative;
+    transition: all 1s ease-in-out;
+}
+.skills-wrapper .skill-box .progress-wrap .progress-bar .tooltip{
+   position: absolute;
+   right: -15px;
+   top: -22px;
+   margin-bottom: 1rem;
+   color: #000;
+   background: #fff;
+   font-size: 1.5rem;
+   text-transform: uppercase;
+}
+
+@media (max-width:600px) {
+    html{
+        font-size: 50.5%;
+    }
+    .skills-wrapper{
+        width: 90%;
+    }
+}
